@@ -16,6 +16,12 @@ In these challenge we'll learn how to
   - `output.tar` contains `compressed_file1` and `compressed_file2` 
 - Run the image and validate its content
 
+To check the content of the Docker container, run the following:
+- `docker build -t test .` 
+- `docker run -dit test /bin/bash`
+- `docker ps` to check if the container has been spun up and find the container name
+- `docker exec -it <container_name> /bin/bash` now you are in the command line of the docker container.
+
 ### Copying files from the local machine to a container
 - Copy the folder `docker_container_files` to the container of the previous challenge
 - Validate the content in the container
