@@ -13,6 +13,8 @@ Setup environment:
 
 Repeat the setup step as many times as necessary throughout the challenges.
 
+Advised time: 1h30min
+
 ### Listing challenges
 Images
 - List images (`docker images`)
