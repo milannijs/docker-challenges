@@ -24,8 +24,10 @@ To check the content of the Docker container, run the following:
 
 ### Copying files from the local machine to a container
 - Copy the folder `docker_container_files` to the container of the previous challenge
-- Validate the content in the container
+(`docker cp docker_container_files/ 9d41ca837f85:/challenge3/`)
+- Validate the content in the container (`docker exec -it <container_name> /bin/bash` and check)
 
 ### Copying files from a Docker container to the local machine
 - Create a file `hello_world` in the container of the previous challenge and copy it to the local machine
+(go inside the docker container `docker exec -it <container_name> /bin/bash` and make a file `touch hello_world`. Copy using `docker cp 9d41ca837f85:/challenge3/hello_world .`)
 - Validate locally the file was copied
